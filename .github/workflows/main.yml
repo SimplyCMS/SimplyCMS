@@ -23,8 +23,7 @@ jobs:
         run: |
           cp .env.testing .env
           php artisan key:generate
-          cat .env
+          cp .env .env.testing
       - name: Set up applicatio
         run: |
-          cat .env
           vendor/bin/phpunit
