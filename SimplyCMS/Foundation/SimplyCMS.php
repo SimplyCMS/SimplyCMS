@@ -10,13 +10,26 @@ use Illuminate\Foundation\Application;
  */
 class SimplyCMS extends Application
 {
+    /**
+     * The base path for plugins.
+     *
+     * @var string
+     */
+    protected $pluginsPath;
+    /**
+     * The base path for themes.
+     *
+     * @var string
+     */
+    protected $themesPath;
+
     public function getPluginsPath(): string
     {
-        return null; //TODO: Fix this
+        return $this->pluginsPath;
     }
 
     public function getThemesPath(): string
     {
-        return null; //TODO: Fix this
+        return $this->themesPath;
     }
 }
