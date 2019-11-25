@@ -24,6 +24,7 @@ jobs:
           cp .env.testing .env
           php artisan key:generate
           cp .env .env.testing
+          cp .env .env.dusk.testing
       - name: Run PHPUnit
         run: vendor/bin/phpunit
       - name: Upgrade chrome driver
