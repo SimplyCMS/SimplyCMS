@@ -1,6 +1,10 @@
 # SimplyCMS #
 ## A Simply Modern CMS ##
 Documentation coming soon :soon: 
+<br>
+[![Latest Stable Version](https://poser.pugx.org/simplycms/simplycms/v/stable)](https://packagist.org/packages/simplycms/simplycms)
+[![License](https://poser.pugx.org/simplycms/simplycms/license)](https://packagist.org/packages/simplycms/simplycms)
+
 ***
 
 ## Components

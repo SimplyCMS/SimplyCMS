@@ -12,7 +12,7 @@
 */
 
 $app = new SimplyCMS\Foundation\SimplyCMS(
-    realpath(__DIR__.'/../public')
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
 /*
