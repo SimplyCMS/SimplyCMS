@@ -17,9 +17,8 @@ jobs:
         run: php -v
       - name: Load Composer Deps
         run: |
+          composer update
           composer validate
-          composer install --prefer-dist --no-progress --no-suggest
-          php artisan key:generate
       - name: Set up application
         run: |
           php artisan key:generate
