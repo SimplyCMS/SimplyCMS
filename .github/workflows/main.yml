@@ -17,10 +17,11 @@ jobs:
         run: php -v
       - name: Load Composer Deps
         run: |
-          composer update
+          composer update --no-progress --no-suggest --prefer-dist --optimize-autoloader
           composer validate
       - name: Set up application
         run: |
+          cp .env.testing .env
           php artisan key:generate
       - name: Run a multi-line script
         run: |
