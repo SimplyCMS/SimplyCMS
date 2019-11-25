@@ -13,8 +13,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Run a one-line script
+      - name: Check PHP Version
         run: php -v
+      - name: Load Composer Deps
+        run: |
+          composer validate
+          composer install --prefer-dist --no-progress --no-suggest
+          php artisan key:generate
+      - name: Set up application
+        run: |
+          php artisan key:generate
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
