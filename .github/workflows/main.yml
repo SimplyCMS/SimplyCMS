@@ -23,7 +23,6 @@ jobs:
         run: |
           cp .env.testing .env
           php artisan key:generate
-      - name: Run a multi-line script
+      - name: Set up application
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          vendor/bin/phpunit
