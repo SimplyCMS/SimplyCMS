@@ -1,4 +1,4 @@
-name: CI
+name: SimplyCMS
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
