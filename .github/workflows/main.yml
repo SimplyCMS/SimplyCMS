@@ -26,4 +26,6 @@ jobs:
           cat .env
       - name: Set up application
         run: |
+          cat .env
           vendor/bin/phpunit
+          cat .env
