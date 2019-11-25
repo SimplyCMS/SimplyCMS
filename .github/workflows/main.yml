@@ -25,12 +25,12 @@ jobs:
           php artisan key:generate
           cp .env .env.testing
       - name: Run PHPUnit
-          run: vendor/bin/phpunit
+        run: vendor/bin/phpunit
       - name: Upgrade chrome driver
-          run: php artisan dusk:chrome-driver
+        run: php artisan dusk:chrome-driver
       - name: Start Chrome Driver
-          run: ./vendor/laravel/dusk/bin/chromedriver-linux > /dev/null 2>&1 &
+        run: ./vendor/laravel/dusk/bin/chromedriver-linux > /dev/null 2>&1 &
       - name: Run Laravel Server
-          run: php artisan serve > /dev/null 2>&1 &
+        run: php artisan serve > /dev/null 2>&1 &
       - name: Run dusk tests
-          run: php artisan dusk
+        run: php artisan dusk
