@@ -24,8 +24,7 @@ jobs:
           cp .env.testing .env
           php artisan key:generate
           cat .env
-      - name: Set up application
+      - name: Set up applicatio
         run: |
           cat .env
           vendor/bin/phpunit
-          cat .env
