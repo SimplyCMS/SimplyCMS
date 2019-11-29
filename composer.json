@@ -47,7 +47,9 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "SimplyCMS\\": "SimplyCMS/"
+            "SimplyCMS\\": "SimplyCMS/",
+            "Frontend\\": "Modules/Frontend/",
+            "Backend\\": "Modules/Backend/"
         },
         "classmap": [
             "database/seeds",
