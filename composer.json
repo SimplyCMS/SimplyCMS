@@ -50,7 +50,8 @@
             "App\\": "app/",
             "SimplyCMS\\": "SimplyCMS/",
             "Frontend\\": "Modules/Frontend/",
-            "Backend\\": "Modules/Backend/"
+            "Backend\\": "Modules/Backend/",
+            "System\\": "Modules/System/"
         },
         "classmap": [
             "database/seeds",
