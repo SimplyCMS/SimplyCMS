@@ -2,6 +2,7 @@
 
 namespace Frontend;
 
+use Frontend\Classes\CMSRouter;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -18,5 +19,8 @@ class FrontendServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->app->singleton(CMSRouter::class, function () {
+            return new CMSRouter();
+        });
     }
 }
