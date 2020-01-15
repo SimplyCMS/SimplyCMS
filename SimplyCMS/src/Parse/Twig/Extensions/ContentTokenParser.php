@@ -1,7 +1,7 @@
 <?php
 
 
-namespace SimplyCMS\Template\Twig\Extensions;
+namespace SimplyCMS\Parse\Twig\Extensions;
 
 
 use Twig\Token;

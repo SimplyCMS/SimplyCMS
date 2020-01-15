@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyCMS\Template\Twig;
+namespace SimplyCMS\Parse\Twig;
 
 use Illuminate\Filesystem\Filesystem;
-use SimplyCMS\Template\Twig\Extensions\TwigHelper;
+use SimplyCMS\Parse\Twig\Extensions\TwigHelper;
 use Symfony\Component\Yaml\Yaml;
 use Twig\Environment as TwigEnvironment;
 use Twig\Loader\ArrayLoader;

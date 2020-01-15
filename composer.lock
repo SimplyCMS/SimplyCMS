@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4095b11209920a5a61d06f8e54b3d063",
+    "content-hash": "7483192e7aefccff9b99b2fe63eb0521",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -224,16 +224,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +277,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -529,16 +529,16 @@
         },
         {
             "name": "laravel/dusk",
-            "version": "v5.8.0",
+            "version": "v5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/dusk.git",
-                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329"
+                "reference": "d67fe1d0797fc2886d9229f011be9af8ee069750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/5a160ed9ca39dcde910d971733fa750a5eb1d329",
-                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/d67fe1d0797fc2886d9229f011be9af8ee069750",
+                "reference": "d67fe1d0797fc2886d9229f011be9af8ee069750",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2019-12-30T21:45:39+00:00"
+            "time": "2020-01-07T18:54:17+00:00"
         },
         {
             "name": "laravel/framework",
@@ -806,16 +806,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.62",
+            "version": "1.0.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0"
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "shasum": ""
             },
             "require": {
@@ -886,7 +886,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-29T14:46:55+00:00"
+            "time": "2020-01-04T16:30:31+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3377,16 +3377,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33"
+                "reference": "c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5",
+                "reference": "c6d36683b40e005cd395ddff1bbfbf0aa0fcd3c5",
                 "shasum": ""
             },
             "require": {
@@ -3444,7 +3444,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2019-11-27T11:17:18+00:00"
+            "time": "2020-01-06T09:32:42+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -4396,16 +4396,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2"
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
                 "shasum": ""
             },
             "require": {
@@ -4475,7 +4475,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-25T14:49:39+00:00"
+            "time": "2020-01-08T08:49:49+00:00"
         },
         {
             "name": "scrivo/highlight.php",

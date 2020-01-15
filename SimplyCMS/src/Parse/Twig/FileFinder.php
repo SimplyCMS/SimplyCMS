@@ -1,12 +1,12 @@
 <?php
 
 
-namespace SimplyCMS\Template\Twig;
+namespace SimplyCMS\Parse\Twig;
 
 /**
  * Class FileFinder
  *
- * @package SimplyCMS\Template\Twig
+ * @package SimplyCMS\Parse\Twig
  */
 class FileFinder
 {

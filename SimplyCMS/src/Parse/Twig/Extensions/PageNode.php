@@ -1,6 +1,6 @@
 <?php
 
-namespace SimplyCMS\Template\Twig\Extensions;
+namespace SimplyCMS\Parse\Twig\Extensions;
 
 use Twig\Node\Node;
 
@@ -15,6 +15,6 @@ class PageNode extends Node
     {
         $compiler
             ->addDebugInfo($this)
-            ->write("echo \$this->env->getExtension('SimplyCMS\Template\Twig\Extensions\TwigHelper')->pageFunction();\n");
+            ->write("echo \$this->env->getExtension('" . TwigHelper::class . "')->pageFunction();\n");
     }
 }

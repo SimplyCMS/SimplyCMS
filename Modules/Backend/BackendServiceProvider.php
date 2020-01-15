@@ -2,6 +2,7 @@
 
 namespace Backend;
 
+use Backend\Classes\BackendRouter;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -18,5 +19,8 @@ class BackendServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->app->singleton(BackendRouter::class, function () {
+            return new BackendRouter();
+        });
     }
 }

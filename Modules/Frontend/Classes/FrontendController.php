@@ -2,19 +2,12 @@
 
 namespace Frontend\Classes;
 
-use Faker\Provider\File;
 use Illuminate\Filesystem\Filesystem;
 use SimplyCMS\Template\Twig\Extensions\ContentTokenParser;
 use SimplyCMS\Template\Twig\Extensions\PageTokenParser;
 use SimplyCMS\Template\Twig\Extensions\TwigHelper;
-use SimplyCMS\Template\Twig\Twig;
+use SimplyCMS\Parse\Twig\Twig;
 use Symfony\Component\Yaml\Yaml;
-use Twig\Environment as TwigEnvironment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\Loader\ArrayLoader;
-use Illuminate\Support\Facades\Storage;
 
 /**
  * Class FrontendController
@@ -23,18 +16,39 @@ use Illuminate\Support\Facades\Storage;
 class FrontendController
 {
     /**
+     *
+     *
      * @var Twig
      */
     protected Twig $twig;
 
     /**
+     * The router to manage routing for this route
+     *
      * @var CMSRouter
      */
     protected CMSRouter $router;
 
+    /**
+     * The current layout for the route
+     *
+     * @var string $layout
+     */
     protected $layout;
 
+    /**
+     * The contents of the page (after '==')
+     *
+     * @var string $pageContents
+     */
     protected string $pageContents;
+
+    /**
+     * The settings for the current page (before '==')
+     *
+     * @var array
+     */
+    protected array $pageSettings;
 
     protected string $themePath;
     protected string $activeTheme;
@@ -52,7 +66,12 @@ class FrontendController
         $this->twig = new Twig($themePath);
     }
 
-    private function bootTwig()
+    /**
+     * Boot any twig extensions for the route
+     *
+     * @return void
+     */
+    private function bootTwig(): void
     {
         $this->twig->loadExtension(Twig::TWIG_TAG, ContentTokenParser::class);
         $this->twig->loadExtension(Twig::TWIG_TAG, PageTokenParser::class);
@@ -104,6 +123,11 @@ class FrontendController
         echo $this->twig->render($pulledroute['layout']);
     }
 
+    /**
+     * Render the page contents
+     *
+     * @return string
+     */
     public function renderPage()
     {
         return $this->pageContents;

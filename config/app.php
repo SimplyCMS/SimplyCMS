@@ -177,6 +177,7 @@ return [
 
         Backend\BackendServiceProvider::class,
         Frontend\FrontendServiceProvider::class,
+        System\SystemServiceProvider::class,
     ],
 
     /*

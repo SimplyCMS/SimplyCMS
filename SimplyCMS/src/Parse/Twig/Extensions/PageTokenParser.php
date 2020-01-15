@@ -1,6 +1,6 @@
 <?php
 
-namespace SimplyCMS\Template\Twig\Extensions;
+namespace SimplyCMS\Parse\Twig\Extensions;
 
 use Twig\Error\SyntaxError;
 use Twig\Node\Node;
@@ -10,7 +10,7 @@ use Twig\TokenParser\AbstractTokenParser;
 /**
  * Class PageTokenParser
  *
- * @package SimplyCMS\Template\Twig\Extensions
+ * @package SimplyCMS\Parse\Twig\Extensions
  */
 class PageTokenParser extends AbstractTokenParser
 {
